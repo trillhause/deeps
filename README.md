@@ -9,7 +9,9 @@ This approach uses optical flow analysis and Convolutional neural networks to es
 - **train.txt:** Text file with speed data at each frame
 - **test.mp4:** 20 fps video with 20400 frames, each frame is 640(w) x 840(h) x 3 (RGB)
 
-### Training parameters
+_Full article explaining the process in detail is [here](https://github.com/millingab/deeps/blob/master/Full%20Article.md)_
+
+## Training parameters
 **Optimizer:** Adam
 
 **loss:** MSE
