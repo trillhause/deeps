@@ -1,7 +1,7 @@
 
 # deeps
 
-_Attempt at for solving Comma.ai's speed challenge_
+_Attempt at for solving [Comma.ai's speed challenge](https://twitter.com/comma_ai/status/849131721572327424?lang=en)_
 
 This approach uses optical flow analysis and Convolutional neural networks to estimate the speed of a car using a dashcam footage of the car. We are provided with a training video (train.mp4) and the speed data at each frame  (train.txt).
 
