@@ -11,6 +11,23 @@ This approach uses optical flow analysis and Convolutional neural networks to es
 
 _Full article explaining the process in detail is [here](https://github.com/millingab/deeps/blob/master/Full%20Article.md)_
 
+## Results
+
+
+![result](https://media.giphy.com/media/2Kc6BtTNwRU6Q/200w_d.gif)
+
+_This gif is speed up 3X. Checkout the [full video here](https://youtu.be/LUTn_I52SMQ)_
+
+I got a MSE of 3.48 on training data and a MSE of 1.4 on validation data. Even though the validation curve has some noise, the overall trend suggests that we are not overfitting the training set. 
+
+![png](images/output_44_1.png)
+
+This was a iterative process like all Deep Learning projects are. This is a list of things I tuned / experimented with:
+- **Inputs:** _check preprocessing section of this notebook to see the different inputs I used_
+- **Hyperparameters:** epoch, batch_size, steps_per_epoch
+- **Optimizers:** Batch Gradient Descent, RMS Prop, Momentum, Adam Optimizer
+
+
 ## Training parameters
 **Optimizer:** Adam
 
@@ -27,22 +44,6 @@ When I trained the model by passing in simple RGB image differences as my discer
 On 25 epochs, the final MSE was 3.4.
 
 Remember, after we train the model I want to use the weights to perform linear regression: where I will simply take my weight matrix and multiply it with the input to predict the speed. This is not a classification task.
-
-## Results
-
-I got a MSE of 3.48 on training data and a MSE of 1.4 on validation data. Even though the validation curve has some noise, the overall trend suggests that we are not overfitting the training set. 
-
-![png](images/output_44_1.png)
-
-This was a iterative process like all Deep Learning projects are. This is a list of things I tuned / experimented with:
-- **Inputs:** _check preprocessing section of this notebook to see the different inputs I used_
-- **Hyperparameters:** epoch, batch_size, steps_per_epoch
-- **Optimizers:** Batch Gradient Descent, RMS Prop, Momentum, Adam Optimizer
-
-
-![result](https://media.giphy.com/media/2Kc6BtTNwRU6Q/200w_d.gif)
-
-This gif is speed up 3X. Checkout the [full video here](https://youtu.be/LUTn_I52SMQ)
 
 ## What I learned from this project
 
